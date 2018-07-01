@@ -1,4 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TravelPlanner.aspx.cs" Inherits="Assignment5.Member.TravelPlanner" %>
+<%@ Register TagPrefix = "a5" TagName="currentTime" 
+			src="~/CurrentTime.ascx" %>
+
 
 <!DOCTYPE html>
 
@@ -23,7 +26,7 @@
                         <td class="auto-style2">
                             <h1>Travel Planner</h1>
                         </td>
-                        <td class="auto-style1">&nbsp;</td>
+                        <td class="auto-style1"><a5:currentTime runat = "server" /></td>
                         <td>
                             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Logout" />
                         </td>
@@ -34,6 +37,7 @@
                         <td>&nbsp;</td>
                     </tr>
                 </table>
+
             </h1>
             <h1>1. Find the Nearest Place</h1>
             <p class="lead">Uses google place api to get the result when a zip code and place name is given as input</p>
