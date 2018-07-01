@@ -73,7 +73,7 @@
             <h1>3. Gas Station Service</h1>
             <p class="lead">This service gives the list of gas stations in a city of a given state</p>
             <p>
-                <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
+                <asp:Label ID="lblCity" runat="server" Text="City Name"></asp:Label>
                 <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
                 <br />
                 <asp:Label ID="lblState" runat="server" Text="State (code)"></asp:Label>

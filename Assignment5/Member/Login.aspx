@@ -105,5 +105,65 @@
             </tr>
         </table>
     </div>
+    <hr />
+    <div>
+        <h2>Services available:</h2>
+        
+&nbsp;<table border="1" style="width:100%;">
+            <tr>
+                <th>Provider Name</th>
+                <th>Service name, with input and output types</th>
+                <th>Service Desription</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Login</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>SignUp</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Captcha </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>User Control</td>
+                <td>Date user control embedded in travel planner which shows the current Date</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Session and Cookies</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>User data storage in xml</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Jasmin George</td>
+                <td>Place Search Input: string (zipcode), string (search string) Output: string</td>
+                <td>This service takes zipcode and string as input and returns the details of the place fetched from the google place api.<br />
+                    Uses google place API to fetch the place details. https://maps.googleapis.com/maps/api/place/nearbysearch/output?parameters</td>
+            </tr>
+            <tr>
+                <td>Jasmin George</td>
+                <td>Weather data Input: a U.S. zipcode Output: An array (or list) of strings, storing 5-day weather forecast for the given zipcode location.</td>
+                <td>This service shows the weather forecast for a given area.<br />
+                    Uses accuweather API to fetch the weather forecast http://dataservice.accuweather.com/forecasts/v1/daily/5day/</td>
+            </tr>
+            <tr>
+                <td>Jasmin George</td>
+                <td>Gas Stations Input: string (city), string (state code) Output: string</td>
+                <td>This service takes city and state code as input and returns the gas stations in that area.<br />
+                    Uses nrel.gov API to fetch the gas stations data. https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
