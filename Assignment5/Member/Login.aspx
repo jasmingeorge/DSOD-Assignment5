@@ -58,5 +58,52 @@
             </td>
         </tr>
     </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <div>
+        <h2>Access controls and permissions:</h2>
+        Use logout button on the travel planner to go clear session and go back to login page. 
+        Use the following credential to access various parts of the site. 
+        Each user will be able to access only a set of pages as described below.<br />
+&nbsp;<table border="1" style="width:100%;">
+            <tr>
+                <th>User</th>
+                <th>SignUp page</th>
+                <th>Travel Planner Page access</th>
+                <th>Staff Landing page access</th>
+                <th>Admin Landing page access</th>
+            </tr>
+            <tr>
+                <td>Normal User:<br />
+                    [Username: user1 Password: pass1]</td>
+                <td>Yes </td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Staff User:<br />
+                    [Username: John Password: 123]</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Admin User:<br />
+                    [Username: admin Password: admin]</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
