@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Assignment5.Member
+namespace Assignment5.Staff
 {
     public partial class Login : System.Web.UI.Page
     {
@@ -28,12 +28,12 @@ namespace Assignment5.Member
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string fLocation = Path.Combine(Request.PhysicalApplicationPath, @"App_Data\Members.xml");
+            string fLocation = Path.Combine(Request.PhysicalApplicationPath, @"App_Data\Staff.xml");
             XmlDocument doc = new XmlDocument();
             doc.Load(fLocation);
 
             XmlElement elmRoot = doc.DocumentElement;
-            XmlNodeList elements = elmRoot.GetElementsByTagName("Member");
+            XmlNodeList elements = elmRoot.GetElementsByTagName("staff");
             foreach (XmlElement element in elements)
             {
                 if (element.GetAttribute("UserName") == txtUserName.Text &&
@@ -48,8 +48,17 @@ namespace Assignment5.Member
                         Response.Cookies.Add(myCookies);
                     }
                     Session["isLoggedIn"] = true;
-                    Session["userType"] = "Member";
-                    Response.Redirect("TravelPlanner.aspx");
+                    Session["Name"] = txtUserName.Text;
+                    if (element.GetAttribute("isAdmin") == "y")
+                    {
+                        Session["userType"] = "Admin";
+                        Response.Redirect("AdminPage.aspx");
+                    }
+                    else
+                    {
+                        Session["userType"] = "Staff";
+                        Response.Redirect("StaffPage.aspx");
+                    }
                     break;
                 }
             }

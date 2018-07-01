@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Assignment5.Member.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Assignment5.Staff.Login" %>
 
 <!DOCTYPE html>
 
@@ -46,12 +46,9 @@
                 <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
                         </td>
                         <td class="auto-style2">
-                <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" OnClick="btnSignUp_Click" />
                         </td>
                     </tr>
                 </table>
-        
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Staff/Login.aspx">Go to admin login</asp:HyperLink>
         
                 <br />
                 </form>

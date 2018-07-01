@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <table style="width:100%;">
+            <table style="width:600px;">
                 <tr>
                     <td colspan="3">
                         <h2>Sign up</h2>
