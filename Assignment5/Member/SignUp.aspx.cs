@@ -60,6 +60,8 @@ namespace Assignment5.Member
             Stream uri = imageVerifier.GetImage(verifierString);
             System.Drawing.Image img = System.Drawing.Image.FromStream(uri);
 
+
+
             img.Save(Path.Combine(Request.PhysicalApplicationPath, @"Member\img.jpeg"), ImageFormat.Jpeg);
         }
     }
